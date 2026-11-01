@@ -1,27 +1,60 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0d3b66">
-  <title>Configuracoes Acessibilidade · ConectaSênior</title>
-  <link rel="stylesheet" href="../styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#205c4e">
+<title>Acessibilidade · ConectaSênior</title>
+<link rel="stylesheet" href="/design.css">
+<script src="/scripts/acessibilidade.js" defer>
+</script>
+<script src="/scripts/interface.js" defer>
+</script>
+<link rel="stylesheet" href="/mobile.css">
 </head>
-<body>
-  <main class="artboard" id="configuracoes-acessibilidade-conectasenior" aria-label="Configuracoes Acessibilidade">
-    <div class="canvas">
-      <i class="shape header-bg" data-node-id="2001:1183" aria-hidden="true"></i><i class="shape card-shape" data-node-id="2001:1186" aria-hidden="true"></i><i class="shape card-shape" data-node-id="2001:1190" aria-hidden="true"></i><i class="shape icon-shape" data-node-id="2001:1193" aria-hidden="true"></i><i class="shape icon-shape" data-node-id="2001:1194" aria-hidden="true"></i><i class="shape card-shape" data-node-id="2001:1195" aria-hidden="true"></i><i class="shape icon-shape" data-node-id="2001:1198" aria-hidden="true"></i><i class="shape icon-shape" data-node-id="2001:1199" aria-hidden="true"></i><i class="shape button-shape" data-node-id="2001:1201" aria-hidden="true"></i><i class="shape button-shape" data-node-id="2001:1204" aria-hidden="true"></i><i class="shape button-shape" data-node-id="2001:1207" aria-hidden="true"></i><i class="shape bottom-nav-bar" data-node-id="2044:206" aria-hidden="true"></i><span class="copy" data-node-id="2001:1184">Configurações</span><span class="copy" data-node-id="2001:1185">Acessibilidade</span><span class="copy" data-node-id="2001:1187">Tamanho do texto</span><span class="copy" data-node-id="2001:1188">Grande</span><span class="copy" data-node-id="2001:1189">›</span><span class="copy" data-node-id="2001:1191">Alto contraste</span><span class="copy" data-node-id="2001:1192">Facilita a leitura</span><span class="copy" data-node-id="2001:1196">Leitura em voz alta</span><span class="copy" data-node-id="2001:1197">Ouvir informações da tela</span><span class="copy" data-node-id="2001:1200">Conta e segurança</span><span class="copy" data-node-id="2001:1202">Alterar senha</span><span class="copy" data-node-id="2001:1203">›</span><span class="copy" data-node-id="2001:1205">Notificações</span><span class="copy" data-node-id="2001:1206">›</span><span class="copy" data-node-id="2001:1208">Sair da conta</span>
-    </div>
-    <a class="hotspot" data-hotspot="configuracoes-acessibilidade-conectasenior-0" href="/pages/tamanho-texto.html" aria-label="Tamanho do texto"></a>
-    <a class="hotspot" data-hotspot="configuracoes-acessibilidade-conectasenior-1" href="/pages/alterar-senha.html" aria-label="Alterar senha"></a>
-    <a class="hotspot" data-hotspot="configuracoes-acessibilidade-conectasenior-2" href="/pages/notificacoes.html" aria-label="Notificações"></a>
-    <a class="hotspot" data-hotspot="configuracoes-acessibilidade-conectasenior-3" href="/pages/login.html" aria-label="Sair da conta"></a>
-    
-    
-    
-  <nav class="bottom-navigation" aria-label="Navegação principal"><a class="bottom-navigation-link" href="/pages/inicio-idoso.html" aria-label="Início"><span class="bottom-navigation-icon" aria-hidden="true">⌂</span></a><a class="bottom-navigation-link" href="/pages/agenda-consultas.html" aria-label="Agenda"><span class="bottom-navigation-icon" aria-hidden="true">◷</span></a><a class="bottom-navigation-link" href="/pages/configuracoes-acessibilidade.html" aria-label="Configurações" aria-current="page"><span class="bottom-navigation-icon" aria-hidden="true">⚙</span></a></nav></main>
-  <script src="/scripts/modo-prototipo.js" defer></script>
+<body class="app-page page-configuracoes-acessibilidade">
+<a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+<div class="workspace"><header class="app-toolbar"><a class="back-action" href="/pages/mais.html" aria-label="Voltar para Mais"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg><span>Voltar</span></a><span class="toolbar-brand">conectasênior</span><a class="toolbar-settings" href="/pages/configuracoes-acessibilidade.html" aria-label="Ajustar acessibilidade"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></svg></a></header>
+
+<main id="main" tabindex="-1">
+<div class="page-heading">
+<div>
+
+<h1>Acessibilidade</h1>
+<p class="subtitle">Deixe este espaço mais confortável para você.</p>
+</div>
+
+</div>
+<section class="ux-card ux-actions">
+<h2>Uma leitura confortável para você</h2>
+<div class="ux-field">
+<label for="text-size">Tamanho do texto</label>
+<select id="text-size">
+<option value="medio">Confortável</option>
+<option value="grande">Grande</option>
+<option value="muito-grande">Muito grande</option>
+</select>
+</div>
+<label class="ux-check" for="contrast">
+<input id="contrast" type="checkbox">Ativar alto contraste</label>
+<p id="preferences-status" role="status" aria-live="polite">As alterações são salvas automaticamente neste navegador.</p>
+</section>
+<section class="ux-card">
+<h2>Prévia da leitura</h2>
+<p>Sua saúde, no seu ritmo. Escolha o tamanho mais confortável para ler.</p>
+</section>
+<button class="ux-button secondary" id="read-page" type="button">Ouvir esta página</button>
+<p class="ux-muted">Você também pode usar o leitor de tela do seu celular. As preferências de leitura acompanham você nas telas do projeto.</p>
+<section class="ux-card ux-actions">
+<h2>Conta e preferências</h2>
+<a class="ux-button secondary" href="/pages/notificacoes.html">Notificações</a>
+<a class="ux-button secondary" href="/pages/alterar-senha.html">Alterar senha</a>
+<a class="ux-button secondary" href="/pages/login.html">Voltar ao acesso de demonstração</a>
+</section>
+
+</main>
+</div>
+<nav class="mobile-nav" aria-label="Navegação principal"><a href="/pages/inicio-idoso.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/></svg><span>Início</span></a><a href="/pages/sinais-vitais.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 5c-3-3-7-1-8 1-1-2-5-4-8-1s-2 7 0 9l8 7 8-7c2-2 3-6 0-9Z"/><path d="M5 12h4l2-3 2 6 2-3h4"/></svg><span>Saúde</span></a><a href="/pages/agenda-consultas.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18"/></svg><span>Agenda</span></a><a href="/pages/mais.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>Mais</span></a></nav>
 </body>
 </html>
-
-

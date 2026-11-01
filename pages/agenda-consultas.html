@@ -1,36 +1,49 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0d3b66">
-  <title>Agenda Consultas · ConectaSênior</title>
-  <link rel="stylesheet" href="../styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#205c4e">
+<title>Minha agenda · ConectaSênior</title>
+<link rel="stylesheet" href="/design.css">
+<script src="/scripts/acessibilidade.js" defer>
+</script>
+<script src="/scripts/interface.js" defer>
+</script>
+<script src="/scripts/consultas.js" defer>
+</script>
+<link rel="stylesheet" href="/mobile.css">
 </head>
-<body>
-  <main class="artboard" id="agenda-consultas-conectasenior" aria-label="Agenda Consultas">
-    <div class="canvas">
-      <i class="shape header-bg" data-node-id="2001:1246" aria-hidden="true"></i><i class="shape card-shape" data-node-id="2001:1251" aria-hidden="true"></i><i class="shape card-shape" data-node-id="2001:1258" aria-hidden="true"></i><i class="shape icon-shape" data-node-id="2001:1259" aria-hidden="true"></i><i class="shape card-shape" data-node-id="2001:1265" aria-hidden="true"></i><i class="shape icon-shape" data-node-id="2001:1266" aria-hidden="true"></i><i class="shape button-shape" data-node-id="2001:1272" aria-hidden="true"></i><i class="shape bottom-nav-bar" data-node-id="2001:1274" aria-hidden="true"></i><span class="copy" data-node-id="2001:1247">Minha agenda</span><span class="copy" data-node-id="2001:1248">＋</span><span class="copy" data-node-id="2001:1249">Setembro 2026</span><span class="copy" data-node-id="2001:1250">⌄</span><span class="copy" data-node-id="2001:1252">HOJE</span><span class="copy" data-node-id="2001:1253">22</span><span class="copy" data-node-id="2001:1254">15:30</span><span class="copy" data-node-id="2001:1255">Cardiologista</span><span class="copy" data-node-id="2001:1256">Dr. Renato · Clínica Vida</span><span class="copy" data-node-id="2001:1257">Próximas consultas</span><span class="copy" data-node-id="2001:1260">SEX</span><span class="copy" data-node-id="2001:1261">26</span><span class="copy" data-node-id="2001:1262">Exame de sangue</span><span class="copy" data-node-id="2001:1263">08:00 · Laboratório Central</span><span class="copy" data-node-id="2001:1264">›</span><span class="copy" data-node-id="2001:1267">TER</span><span class="copy" data-node-id="2001:1268">30</span><span class="copy" data-node-id="2001:1269">Fisioterapia</span><span class="copy" data-node-id="2001:1270">10:00 · Espaço Movimento</span><span class="copy" data-node-id="2001:1271">›</span><span class="copy" data-node-id="2001:1273">Adicionar nova consulta</span>
-      <section class="appointment-list" id="appointment-list" aria-label="Consultas marcadas">
-        <a class="appointment-card" href="/pages/editar-consulta.html?id=figma-cardiologista" aria-label="Editar consulta: Cardiologista">
-          <span class="appointment-date-badge">22 SET</span><span class="appointment-details"><strong>Cardiologista</strong><span>15:30 · Dr. Renato · Clínica Vida</span></span>
-        </a>
-        <a class="appointment-card" href="/pages/editar-consulta.html?id=figma-exame" aria-label="Editar consulta: Exame de sangue">
-          <span class="appointment-date-badge">26 SET</span><span class="appointment-details"><strong>Exame de sangue</strong><span>08:00 · Laboratório Central</span></span>
-        </a>
-      </section>
-    </div>
-    <a class="hotspot" data-hotspot="agenda-consultas-conectasenior-0" href="/pages/detalhes-consulta.html" aria-label="Cardiologista"></a>
-    <a class="hotspot" data-hotspot="agenda-consultas-conectasenior-1" href="/pages/detalhes-consulta.html" aria-label="Exame de sangue"></a>
-    <a class="hotspot" data-hotspot="agenda-consultas-conectasenior-2" href="/pages/detalhes-consulta.html" aria-label="Fisioterapia"></a>
-    <a class="hotspot" data-hotspot="agenda-new-consultation" href="/pages/nova-consulta.html" aria-label="Adicionar nova consulta"></a>
-    
-    
-    
-  <nav class="bottom-navigation" aria-label="Navegação principal"><a class="bottom-navigation-link" href="/pages/inicio-idoso.html" aria-label="Início"><span class="bottom-navigation-icon" aria-hidden="true">⌂</span></a><a class="bottom-navigation-link" href="/pages/agenda-consultas.html" aria-label="Agenda" aria-current="page"><span class="bottom-navigation-icon" aria-hidden="true">◷</span></a><a class="bottom-navigation-link" href="/pages/configuracoes-acessibilidade.html" aria-label="Configurações"><span class="bottom-navigation-icon" aria-hidden="true">⚙</span></a></nav></main>
-  <script src="/scripts/consultas.js" defer></script>
-  <script src="/scripts/modo-prototipo.js" defer></script>
+<body class="app-page page-agenda-consultas">
+<a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+<div class="workspace"><header class="app-toolbar"><a class="back-action" href="/pages/inicio-idoso.html" aria-label="Voltar para Início"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg><span>Voltar</span></a><span class="toolbar-brand">conectasênior</span><a class="toolbar-settings" href="/pages/configuracoes-acessibilidade.html" aria-label="Ajustar acessibilidade"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></svg></a></header>
+
+<main id="main" tabindex="-1">
+<div class="page-heading">
+<div>
+
+<h1>Minha agenda</h1>
+<p class="subtitle">Mais organização para você viver com tranquilidade.</p>
+</div>
+
+</div>
+<div class="section-title">
+<h2>Meus compromissos</h2>
+<a class="button" href="/pages/nova-consulta.html">Agendar consulta<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M5 12h14m-5-5 5 5-5 5"/>
+</svg>
+</a>
+</div>
+<div id="appointment-list" class="appointment-list" aria-live="polite">
+<p>Carregando sua agenda…</p>
+</div>
+<div class="notice">
+<span class="status-dot">
+</span> Ambiente acadêmico · dados de demonstração</div>
+
+</main>
+</div>
+<nav class="mobile-nav" aria-label="Navegação principal"><a href="/pages/inicio-idoso.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/></svg><span>Início</span></a><a href="/pages/sinais-vitais.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 5c-3-3-7-1-8 1-1-2-5-4-8-1s-2 7 0 9l8 7 8-7c2-2 3-6 0-9Z"/><path d="M5 12h4l2-3 2 6 2-3h4"/></svg><span>Saúde</span></a><a href="/pages/agenda-consultas.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18"/></svg><span>Agenda</span></a><a href="/pages/mais.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>Mais</span></a></nav>
 </body>
 </html>
-
-

@@ -1,24 +1,48 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0d3b66">
-  <title>Lembrete Medicamento · ConectaSênior</title>
-  <link rel="stylesheet" href="../styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#205c4e">
+<title>Sua rotina de cuidados · ConectaSênior</title>
+<link rel="stylesheet" href="/design.css">
+<script src="/scripts/acessibilidade.js" defer>
+</script>
+<script src="/scripts/interface.js" defer>
+</script>
+<link rel="stylesheet" href="/mobile.css">
 </head>
-<body>
-  <main class="artboard" id="lembrete-medicamento-conectasenior" aria-label="Lembrete Medicamento">
-    <div class="canvas">
-      <img class="asset background-asset" data-node-id="2001:1128" src="/assets/lembrete-medicamento-conectasenior__2308f.svg" width="393" height="852" alt=""><img class="asset" data-node-id="2001:1130" src="/assets/lembrete-medicamento-conectasenior__9a069.svg" width="393" height="100" alt=""><img class="asset" data-node-id="2001:1133" src="/assets/lembrete-medicamento-conectasenior__64c7f.svg" width="345" height="327" alt=""><img class="asset" data-node-id="2001:1134" src="/assets/lembrete-medicamento-conectasenior__a061c.svg" width="118" height="118" alt=""><img class="asset" data-node-id="2001:1135" src="/assets/lembrete-medicamento-conectasenior__4fcb4.svg" width="54" height="54" alt=""><img class="asset" data-node-id="2001:1136" src="/assets/lembrete-medicamento-conectasenior__a4fe4.svg" width="39" height="39" alt=""><img class="asset" data-node-id="2001:1139" src="/assets/lembrete-medicamento-conectasenior__d91b3.svg" width="207" height="44" alt=""><img class="asset" data-node-id="2001:1142" src="/assets/lembrete-medicamento-conectasenior__25a8a.svg" width="345" height="66" alt=""><img class="asset" data-node-id="2001:1144" src="/assets/lembrete-medicamento-conectasenior__5bb70.svg" width="345" height="66" alt=""><img class="asset" data-node-id="2044:140" src="/assets/lembrete-medicamento-conectasenior__502f7.svg" width="393" height="52" alt=""><span class="copy" data-node-id="2001:1131">Lembrete de remédio</span><span class="copy" data-node-id="2001:1132">Agora, 09:00</span><span class="copy" data-node-id="2001:1137">Losartana</span><span class="copy" data-node-id="2001:1138">50 mg · 1 comprimido</span><span class="copy" data-node-id="2001:1140">Tomar após o café</span><span class="copy" data-node-id="2001:1141">Já tomou o remédio?</span><span class="copy" data-node-id="2001:1143">Sim, já tomei</span><span class="copy" data-node-id="2001:1145">Lembrar em 15 minutos</span><span class="copy" data-node-id="2001:1146">Se precisar, peça ajuda a um acompanhante.</span>
-    </div>
-    <a class="hotspot" data-hotspot="lembrete-medicamento-conectasenior-0" href="/pages/remedio-registrado.html?id=sample-losartana" aria-label="Sim, já tomei"></a>
-    
-    
-    
-  <nav class="bottom-navigation" aria-label="Navegação principal"><a class="bottom-navigation-link" href="/pages/inicio-idoso.html" aria-label="Início"><span class="bottom-navigation-icon" aria-hidden="true">⌂</span></a><a class="bottom-navigation-link" href="/pages/agenda-consultas.html" aria-label="Agenda"><span class="bottom-navigation-icon" aria-hidden="true">◷</span></a><a class="bottom-navigation-link" href="/pages/configuracoes-acessibilidade.html" aria-label="Configurações"><span class="bottom-navigation-icon" aria-hidden="true">⚙</span></a></nav></main>
-  <script src="/scripts/modo-prototipo.js" defer></script>
+<body class="app-page page-lembrete-remedio">
+<a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+<div class="workspace"><header class="app-toolbar"><a class="back-action" href="/pages/inicio-idoso.html" aria-label="Voltar para Início"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg><span>Voltar</span></a><span class="toolbar-brand">conectasênior</span><a class="toolbar-settings" href="/pages/configuracoes-acessibilidade.html" aria-label="Ajustar acessibilidade"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></svg></a></header>
+
+<main id="main" tabindex="-1">
+<div class="page-heading">
+<div>
+
+<h1>Sua rotina de cuidados</h1>
+<p class="subtitle">Consulte os horários que você cadastrou.</p>
+</div>
+
+</div>
+<section class="card">
+<h2>Um cuidado de cada vez</h2>
+<span class="icon-tile">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m8 4-4 4a6 6 0 0 0 8 8l4-4A6 6 0 0 0 8 4Z"/>
+<path d="m6 6 8 8"/>
+</svg>
+</span>
+<p>Confira o nome, a dosagem e as orientações na sua lista de remédios.</p>
+<a class="button" href="/pages/meus-remedios.html">Ver meus remédios<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M5 12h14m-5-5 5 5-5 5"/>
+</svg>
+</a>
+</section>
+
+</main>
+</div>
+<nav class="mobile-nav" aria-label="Navegação principal"><a href="/pages/inicio-idoso.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/></svg><span>Início</span></a><a href="/pages/sinais-vitais.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 5c-3-3-7-1-8 1-1-2-5-4-8-1s-2 7 0 9l8 7 8-7c2-2 3-6 0-9Z"/><path d="M5 12h4l2-3 2 6 2-3h4"/></svg><span>Saúde</span></a><a href="/pages/agenda-consultas.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18"/></svg><span>Agenda</span></a><a href="/pages/mais.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>Mais</span></a></nav>
 </body>
 </html>
-
-
